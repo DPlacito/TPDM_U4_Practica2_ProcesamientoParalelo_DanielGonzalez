@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/etiqueta_Cronometro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/tiempo"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="60dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_Iniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Iniciar"
+            android:src="@drawable/play" />
+
+        <ImageButton
+            android:id="@+id/btn_Parar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Pausar"
+            android:src="@drawable/pause"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageButton
+            android:id="@+id/btn_Reiniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Reiniciar"
+            android:src="@drawable/stop" />
+
+    </LinearLayout>
+
+</LinearLayout>

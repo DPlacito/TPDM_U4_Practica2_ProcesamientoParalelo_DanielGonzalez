@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='TPDM_U4_Practica2_ProcesamientoParalelo_DanielGonzalez'
